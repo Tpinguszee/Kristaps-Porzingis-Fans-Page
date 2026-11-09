@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PORZIŅĢIS ARCHIVE</title>
+    <style>
+        :root {
+            --latvia-red: #9E1B32;
+            --latvia-red-hover: #BF213E;
+            --latvia-red-dark: #5A0E1C;
+            --bg-main: #0C0C0E;
+            --bg-card: #16151A;
+            --border-color: #2A242B;
+            --text-main: #FFFFFF;
+            --text-muted: #A0A0AB;
+            --gold-accent: #E2B874;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            color: var(--latvia-red);
+            font-size: 1.15rem;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .tagline {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--latvia-red-dark) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem 1.25rem;
+            box-shadow: 0 8px 25px rgba(158, 27, 50, 0.2);
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background-color: var(--latvia-red);
+            color: #fff;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 0.75rem 0 0.5rem 0;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 1rem 0;
+            color: var(--text-main);
+            border-left: 3px solid var(--latvia-red);
+            padding-left: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--latvia-red);
+        }
+
+        .card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stats-highlight {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .stat-item .val {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--gold-accent);
+        }
+
+        .stat-item .label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>THE PORZIŅĢIS ARCHIVE</h1>
+            </div>
+            <div class="tagline">A Legacy Beyond the Game</div>
+        </header>
+
+        <main>
+            <!-- Hero 專區 -->
+            <div class="hero">
+                <span class="badge">LATVIAN UNICORN</span>
+                <h2>Kristaps Porziņģis</h2>
+                <p>The definitive digital repository documenting career milestones, verified health updates, and international basketball legacy.</p>
+                
+                <div class="stats-highlight">
+                    <div class="stat-item">
+                        <div class="val">7'2"</div>
+                        <div class="label">Height</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="val">NBA</div>
+                        <div class="label">Champion</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="val">Latvia</div>
+                        <div class="label">National Team</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Archive Modules</div>
+
+            <!-- 功能模組卡片區 -->
+            <div class="grid">
+                <div class="card">
+                    <h3>📊 Career Statistics</h3>
+                    <p>Comprehensive analysis of regular season and playoff performances across his NBA journey (Knicks, Mavericks, Celtics, etc.).</p>
+                </div>
+
+                <div class="card">
+                    <h3>🏥 Health & Recovery Monitor</h3>
+                    <p>Fact-checked chronological tracking of official team injury reports, recovery milestones, and medical updates.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🛡️ Latvia National Team</h3>
+                    <p>Dedicated documentation of international tournaments, FIBA qualifiers, and representing the Latvian national pride.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2026 THE PORZIŅĢIS ARCHIVE. Built with Latvian Carmine theme.
+        </footer>
+    </div>
+</body>
+</html>
